@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?uqtcy');
+    src: url('fonts/icomoon.eot?uqtcy#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?uqtcy') format('truetype'),
+        url('fonts/icomoon.woff?uqtcy') format('woff'),
+        url('fonts/icomoon.svg?uqtcy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\f002";
+}
+
+/* Main Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 395px;
+    max-width: 80%;
+    background-image: linear-gradient(135deg, #00feba, #5b548a);
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 70px auto;
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 999px;
+}
+
+.search button {
+    border: none;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background-color, 0.2s;
+}
+
+.search button:hover {
+    background-image: linear-gradient(135deg, #2bbe97, #5b548a);
+    color: #fff;
+}
+
+.info {
+    display: none;
+}
+
+.info > img {
+    max-width: 160px;
+}
+
+.info > h1 {
+    font-size: 4rem;
+}
+
+.info > h2 {
+    font-size: 2rem;
+}
+
+.bottom-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.bottom-part .left-one,
+.bottom-part .right-one {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.bottom-part .left-one img,
+.bottom-part .right-one img {
+    width: 50px;
+}
